@@ -12,7 +12,6 @@ def generate_data(**context):
 args = {
     'owner': 'amaksimovich',
     'depends_on_past': False,
-    'retries': 1,
     'schedule_interval': None,
     'provide_context': True
 }
