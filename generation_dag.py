@@ -3,8 +3,8 @@ from airflow.operators.python import PythonOperator
 
 
 def generate_data(**context):
-    name = context['dag_run'].conf['name']
-    rows = context['dag_run'].conf['rows']
+    name = "table" # context['dag_run'].conf['name']
+    rows = "rows" # context['dag_run'].conf['rows']
     print(f"hello, {name} {type(name)}")
     print(f"row: {rows} {type(rows)}")
 
